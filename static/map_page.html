@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="custom.css">
+  </head>
+
+  <body>
+
+  <div class="container-fluid header-font1 corner">
+		<img src="456.png" alt="site banner">
+
+    <div style="padding: 20px; position: absolute; font-size: 12px; top: 320px; right: 0;">
+     <div class="search">
+        <input type="text" id="searchTerms" class="searchTerm" placeholder="What are you looking for?">
+        <button class="btn-primary" id="searchTermsBtn">
+          <i class="fa fa-search"></i>
+       </button>
+     </div>
+    </div>
+
+	</div>
+	<div class="row topnav corner">
+		<div class="col-3">
+			<a href="index.html">Home</a>
+		</div>
+		<div class="col-3">
+			<a href="map_page.html">Map</a>
+		</div>
+		<div class="col-3">
+			<a href="#contact">Contact</a>
+		</div>
+		<div class="col-3">
+			<a href="#about">About</a>
+		</div>
+	</div>
+
+  <div class="bg-info text-white" style="positionZ: absolute; top: 320px; left: 20px; width: 200px;">
+    // NODE KEY
+    <br>
+    // Blue is physical
+    // Red is spiritual
+    // Black is other
+    <br>
+    // LINK KEY
+    <br>
+    // Blue(Physical to Physical) is type1
+    // Red(Spiritual to Spiritual) is type2
+    <br>
+    // Green(Physical to Spiritual) is type3
+    // Black(Others) is type4
+  </div>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+
+    <script>
+
+
+    var linkpath = ("links.csv");
+    var nodepath = ("nodes.csv");
+    var searchTerms = $("#searchTerms").val() || "";
+    $("#searchTermsBtn").on("click",function(event){
+
+    });
+
+    var width = $('body').width(),
+        height = 500;
+
+    var color = d3.scale.category20();
+
+
+    var svg = d3.select("body").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+
+    //Want to have different labels
+    // SETTING UP THE FORCE LAYOUT
+      var force = d3.layout.force()
+      //using width/height from above, but size is mainly det'd by linkDistance and charge
+        .size([width, height])
+        // how far between nodes
+        .linkDistance(200)
+        // changes how close nodes will get to each other. Neg is farther apart.
+        .charge(-300);
+
+
+    d3.csv(nodepath, function(nodes) {
+
+      var nodelookup = {};
+      var nodecollector = {};
+
+       count = 0;
+    // we want to create a lookup table that will relate the links file and the nodes file
+        nodes.forEach(function(row) {
+        nodelookup[row.node] = count;
+
+        nodecollector[row.node] = {name: row.node, group: row.group};
+        //console.log(nodecollector)
+
+        //console.log(row.node)
+        //console.log(nodelookup)
+
+        count++;
+     });
+
+    //Get all the links out of of the csv in a way that will match up with the nodes
+
+    d3.csv(linkpath, function(linkchecker) {
+
+      var linkcollector = {};
+      indexsource = 0;
+      indextarget = 0;
+        count= 0;
+        //console.log(nodelookup['celery'])
+        linkchecker.forEach(function(link) {
+
+    	linkcollector[count] = {source: nodelookup[link.source], target: nodelookup[link.target], type: link.type };
+        //console.log(linkcollector[count])
+    	count++
+    });
+
+    //console.log(linkcollector)
+    var nodes = d3.values(nodecollector);
+    var links = d3.values(linkcollector);
+
+    //console.log(nodes)
+    //console.log(links)
+
+      // Create the link lines.
+      var link = svg.selectAll(".link")
+          .data(links)
+         .enter().append("line")
+         .attr("class", function(d) { return "link " + d.type; })
+
+      // Create the node circles.
+      var node = svg.selectAll(".node")
+          .data(nodes)
+        .enter().append("g")
+          .attr("class", "node")
+        .call(force.drag);
+
+     //put in little circles to drag
+      node.append("circle")
+          .attr("r", 4.5)
+        .attr("class", function(d) { return "node " + d.group; })
+        .call(force.drag);
+
+    //add the words
+     node.append("text")
+          .attr("dx", 12)
+          .attr("dy", ".35em")
+          .text(function(d) { return d.name });
+
+    //get it going!
+     force
+          .nodes(nodes)
+          .links(links)
+          .start();
+
+      force.on("tick", function() {
+
+
+        link.attr("x1", function(d) { return d.source.x; })
+            .attr("y1", function(d) { return d.source.y; })
+            .attr("x2", function(d) { return d.target.x; })
+            .attr("y2", function(d) { return d.target.y; });
+
+    //I think that translate changes all of the x and ys at once instead of one by one?
+        node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+
+      })
+
+
+      });
+      });
+
+    </script>
+
+  </body>
+</html>
