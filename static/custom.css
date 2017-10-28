@@ -1,0 +1,107 @@
+.header-height {
+	height: 200px;
+}
+.header-color{
+	background-color: blue;
+}
+.column-color1{
+	background-color: red;
+} 
+.column-color2{
+	background-color: white;
+}
+.column-color3{
+	background-color: pink;
+}
+.header-font{
+	font-size: 50px;
+}
+.header-font1{
+	font-size: 125px;
+}
+.corner{
+	border-radius: 25px;
+}
+.stylish-input-group .input-group-addon{
+    background: white;
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+.topnav{
+    background-color: #333;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: center;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a:active {
+    background-color: #4CAF50;
+    color: white;
+}
+h3{
+	width:100%;
+	border-bottom: solid 2px #0d0d0d;
+}
+
+h2{
+	width:100%;
+	border-bottom: solid 2px #0d0d0d;
+}
+
+.box{
+	margin: 5px 0;
+}
+
+.button-hover:hover{
+	background-color: B2B2B2;
+}
+
+.button{
+    background-color: #ffffff; /*white*/
+    border: none;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.tag{
+	color: #B2B2B2;
+}
+
+.search-space{
+	margin-top: 25px;
+	margin-bottom: 25px:
+}
+	
+.button-space{
+	margin: 5px 5px;
+}
+
+.button-color{
+	color: #000000;
+}
