@@ -1,0 +1,12 @@
+source,target,type
+yoga,meditation,type1
+yoga,back pain,type1
+yoga,reiki,type3
+reiki,back pain,type3
+reiki,meditation,type3
+reiki,stress relief,type2
+stress relief,meditation,type3
+spiritual,meditation,type3
+yoga,spiritual,type3
+spiritual,stress relief,type2
+back pain,stress relief,type3

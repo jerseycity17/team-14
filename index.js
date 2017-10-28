@@ -1,27 +1,17 @@
-var express = require('express');
-var app = express();
-var fs = require('fs');
-var port = 8888;
+const express = require('express');
+const app = express();
+const fs = require('fs');
+const api = require('./api.js');
+const port = 8888;
 
-app.get('/api/test', function (req, res){
-  res.write("Hello");
-  return res.end();
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + "/static/html/index.html");
 });
 
-app.get('/', function (req, res){
-  var filename = "./" + "Home.html";
-  fs.readFile(filename, function(err, data){
-    if (err) {
-      res.writeHead(404, {'Content-Type': 'text/html'});
-      return res.end("404 BOB Not Found");
-    }
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.write(data);
-    return res.end();
-  });
+app.post('/quotes', (req, res) => {
+  console.log('Hellooooo');
 });
 
-var server = app.listen(port, function () {
-  console.log("Example app listening at http://localhost:%s", port)
-
-})
+app.listen(port, function () {
+  console.log("listening on 8888");
+});

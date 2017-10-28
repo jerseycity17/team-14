@@ -1,0 +1,90 @@
+28-Oct-2017 08:32:56.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.23
+28-Oct-2017 08:32:56.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 28 2017 10:30:11 UTC
+28-Oct-2017 08:32:56.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.23.0
+28-Oct-2017 08:32:56.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+28-Oct-2017 08:32:56.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.10.0-37-generic
+28-Oct-2017 08:32:56.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+28-Oct-2017 08:32:56.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+28-Oct-2017 08:32:56.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-8u131-b11-2ubuntu1.17.04.3-b11
+28-Oct-2017 08:32:56.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+28-Oct-2017 08:32:56.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23
+28-Oct-2017 08:32:56.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23
+28-Oct-2017 08:32:56.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/conf/logging.properties
+28-Oct-2017 08:32:56.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-Oct-2017 08:32:56.677 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+28-Oct-2017 08:32:56.677 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+28-Oct-2017 08:32:56.677 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23
+28-Oct-2017 08:32:56.677 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23
+28-Oct-2017 08:32:56.677 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/temp
+28-Oct-2017 08:32:56.677 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+28-Oct-2017 08:32:56.726 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+28-Oct-2017 08:32:56.737 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-Oct-2017 08:32:56.739 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2017 08:32:56.740 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-Oct-2017 08:32:56.740 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 301 ms
+28-Oct-2017 08:32:56.787 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-Oct-2017 08:32:56.787 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.23
+28-Oct-2017 08:32:56.793 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/ROOT]
+28-Oct-2017 08:32:56.997 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/ROOT] has finished in [203] ms
+28-Oct-2017 08:32:56.997 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/docs]
+28-Oct-2017 08:32:57.011 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/docs] has finished in [13] ms
+28-Oct-2017 08:32:57.011 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/host-manager]
+28-Oct-2017 08:32:57.034 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/host-manager] has finished in [23] ms
+28-Oct-2017 08:32:57.034 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/examples]
+28-Oct-2017 08:32:57.182 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/examples] has finished in [148] ms
+28-Oct-2017 08:32:57.182 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/manager]
+28-Oct-2017 08:32:57.199 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/manager] has finished in [17] ms
+28-Oct-2017 08:32:57.201 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+28-Oct-2017 08:32:57.206 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2017 08:32:57.207 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 467 ms
+28-Oct-2017 09:23:37.549 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/codeForGood]
+28-Oct-2017 09:23:37.567 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/codeForGood] has finished in [17] ms
+28-Oct-2017 09:33:11.621 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+28-Oct-2017 09:33:11.622 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+28-Oct-2017 09:33:11.674 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2017 09:33:11.725 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+28-Oct-2017 09:33:11.743 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+28-Oct-2017 09:33:11.744 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2017 09:33:11.745 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+28-Oct-2017 09:33:11.745 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2017 09:33:38.152 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.23
+28-Oct-2017 09:33:38.153 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 28 2017 10:30:11 UTC
+28-Oct-2017 09:33:38.154 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.23.0
+28-Oct-2017 09:33:38.154 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+28-Oct-2017 09:33:38.154 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.10.0-37-generic
+28-Oct-2017 09:33:38.154 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+28-Oct-2017 09:33:38.154 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+28-Oct-2017 09:33:38.154 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_131-8u131-b11-2ubuntu1.17.04.3-b11
+28-Oct-2017 09:33:38.154 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+28-Oct-2017 09:33:38.154 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23
+28-Oct-2017 09:33:38.154 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23
+28-Oct-2017 09:33:38.154 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/conf/logging.properties
+28-Oct-2017 09:33:38.154 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-Oct-2017 09:33:38.154 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+28-Oct-2017 09:33:38.154 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+28-Oct-2017 09:33:38.155 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23
+28-Oct-2017 09:33:38.155 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23
+28-Oct-2017 09:33:38.155 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/temp
+28-Oct-2017 09:33:38.155 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+28-Oct-2017 09:33:38.203 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+28-Oct-2017 09:33:38.215 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-Oct-2017 09:33:38.217 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2017 09:33:38.218 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-Oct-2017 09:33:38.218 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 321 ms
+28-Oct-2017 09:33:38.250 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-Oct-2017 09:33:38.250 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.23
+28-Oct-2017 09:33:38.256 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/ROOT]
+28-Oct-2017 09:33:38.444 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/ROOT] has finished in [188] ms
+28-Oct-2017 09:33:38.444 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/docs]
+28-Oct-2017 09:33:38.455 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/docs] has finished in [11] ms
+28-Oct-2017 09:33:38.455 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/host-manager]
+28-Oct-2017 09:33:38.476 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/host-manager] has finished in [21] ms
+28-Oct-2017 09:33:38.476 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/codeForGood]
+28-Oct-2017 09:33:38.492 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/codeForGood] has finished in [15] ms
+28-Oct-2017 09:33:38.492 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/examples]
+28-Oct-2017 09:33:38.633 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/examples] has finished in [141] ms
+28-Oct-2017 09:33:38.633 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/manager]
+28-Oct-2017 09:33:38.646 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/mahamitra/Desktop/Code For Good/tomcat8/apache-tomcat-8.5.23/webapps/manager] has finished in [13] ms
+28-Oct-2017 09:33:38.648 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+28-Oct-2017 09:33:38.653 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+28-Oct-2017 09:33:38.654 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 436 ms
