@@ -12,7 +12,7 @@ import java.util.Hashtable;
  * @author gazi
  */
 public class WeightedConnections{
-        Hashtable<String,Integer> connectionWeight;
+       Hashtable<String,Integer> connectionWeight;
         
         public WeightedConnections(){
             connectionWeight = new Hashtable<String,Integer>();

@@ -7,20 +7,28 @@ package taglinkcreator;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Scanner;
 
 /**
  *
- * @author gazi
+ * @author Gazi Sakib
  */
 public class TagLinkCreator {
 
+    private static final String FILE_HEADER="id,tag";
+
+    private static final String COMMA_DELIMITER = ",";
+
+    private static final String NEW_LINE_SEPARATOR = "\n";
     
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws FileNotFoundException, IOException {
         
         ArrayList <String> tagList = new ArrayList<String>();
         
@@ -48,7 +56,11 @@ public class TagLinkCreator {
         
         String[][] newTagList = createCompleteTagList(tagList);
         
-        createWeightedTagGraph();
+        writeToCsv(newTagList);
+        
+        WeightedGraph wg = createWeightedTagGraph();
+        
+        Collection coll = wg.tagConnections.values();
         
     }
     
@@ -90,10 +102,15 @@ public class TagLinkCreator {
              
              for(int i=0;i<listArr.length-1;i++){
                  String srcConnectionStr = listArr[i];
+                 
+                 if(!wg.tagConnections.contains(srcConnectionStr)){
                  wg.addNewNode(srcConnectionStr);
+                 }
+                 
                  WeightedConnections wc = wg.retrieveSingleNode(srcConnectionStr);
                  
                  for(int j=i+1;j<listArr.length;j++){
+                     
                      if(wc.connectionWeight.contains(listArr[j])){
                          wc.incrementConnection(listArr[j]);
                      }
@@ -114,5 +131,26 @@ public class TagLinkCreator {
             System.out.println(E.getMessage());
         }
         return wg;
+    }
+    
+    public static void writeToCsv(String[][] strArr){
+        try{
+        FileWriter fileWriter = new FileWriter("/home/gazi/NetBeansProjects/TagLinkCreator/nodes.csv");
+        fileWriter.append(FILE_HEADER.toString());
+        fileWriter.append(NEW_LINE_SEPARATOR);
+        
+        for(int i=0; i<strArr.length;i++){
+            fileWriter.append("id");
+            fileWriter.append(COMMA_DELIMITER.toString());
+            fileWriter.append(strArr[i][1]);
+            fileWriter.append(NEW_LINE_SEPARATOR.toString());
+        }
+        
+        
+        }
+        catch(Exception E){
+            
+        }
+        
     }
 }
