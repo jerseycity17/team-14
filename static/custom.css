@@ -1,3 +1,7 @@
+.image-margin {
+	padding: 30px;
+}
+
 .header-height {
 	height: 200px;
 }
@@ -6,7 +10,7 @@
 }
 .column-color1{
 	background-color: red;
-} 
+}
 .column-color2{
 	background-color: white;
 }
@@ -19,15 +23,13 @@
 .header-font1{
 	font-size: 125px;
 }
-.corner{
-	border-radius: 25px;
-}
+
 .stylish-input-group .input-group-addon{
     background: white;
 }
 .stylish-input-group .form-control{
-	border-right:0; 
-	box-shadow:0 0 0; 
+	border-right:0;
+	box-shadow:0 0 0;
 	border-color:#ccc;
 }
 .stylish-input-group button{
@@ -97,7 +99,7 @@ h2{
 	margin-top: 25px;
 	margin-bottom: 25px:
 }
-	
+
 .button-space{
 	margin: 5px 5px;
 }
