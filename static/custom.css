@@ -6,7 +6,7 @@
 }
 .column-color1{
 	background-color: red;
-} 
+}
 .column-color2{
 	background-color: white;
 }
@@ -26,8 +26,8 @@
     background: white;
 }
 .stylish-input-group .form-control{
-	border-right:0; 
-	box-shadow:0 0 0; 
+	border-right:0;
+	box-shadow:0 0 0;
 	border-color:#ccc;
 }
 .stylish-input-group button{
@@ -97,11 +97,65 @@ h2{
 	margin-top: 25px;
 	margin-bottom: 25px:
 }
-	
+
 .button-space{
 	margin: 5px 5px;
 }
 
 .button-color{
 	color: #000000;
+}
+
+.link {
+  stroke: black;
+  stroke-opacity: .6;
+}
+
+.node text {
+  pointer-events: none;
+  font: 15px sans-serif;
+  font-weight: bolder;
+  fill: black;
+}
+
+.node.physical{
+  fill: blue;
+  stroke-opacity: .3;
+  stroke-width: 4;
+}
+
+.node.spiritual{
+  fill: red;
+  stroke-opacity: .3;
+  stroke-width: 4;
+}
+
+.node.other{
+  fill: black;
+  stroke-opacity: .3;
+  stroke-width: 4;
+}
+
+.link.type1{
+  stroke: blue;
+  stroke-opacity: .3;
+  stroke-width: 4;
+}
+
+.link.type2{
+  stroke: red;
+  stroke-opacity: .3;
+  stroke-width: 4;
+}
+
+.link.type3{
+  stroke: green;
+  stroke-opacity: .3;
+  stroke-width: 4;
+}
+
+.link.type4{
+  stroke: black;
+  stroke-opacity: .3;
+  stroke-width: 4;
 }
