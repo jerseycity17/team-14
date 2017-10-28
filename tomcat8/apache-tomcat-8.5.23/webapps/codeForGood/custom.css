@@ -107,3 +107,60 @@ h2{
 .button-color{
 	color: #000000;
 }
+<<<<<<< HEAD
+=======
+
+.link {
+  stroke: black;
+  stroke-opacity: .6;
+}
+
+.node text {
+  pointer-events: none;
+  font: 15px sans-serif;
+  font-weight: bolder;
+  fill: black;
+}
+
+.node.physical{
+  fill: blue;
+  stroke-opacity: .3;
+  stroke-width: 4;
+}
+
+.node.spiritual{
+  fill: red;
+  stroke-opacity: .3;
+  stroke-width: 4;
+}
+
+.node.other{
+  fill: black;
+  stroke-opacity: .3;
+  stroke-width: 4;
+}
+
+.link.type1{
+  stroke: blue;
+  stroke-opacity: .3;
+  stroke-width: 4;
+}
+
+.link.type2{
+  stroke: red;
+  stroke-opacity: .3;
+  stroke-width: 4;
+}
+
+.link.type3{
+  stroke: green;
+  stroke-opacity: .3;
+  stroke-width: 4;
+}
+
+.link.type4{
+  stroke: black;
+  stroke-opacity: .3;
+  stroke-width: 4;
+}
+>>>>>>> 4cd8660d7c612eba659121bdc0d00d965c2d91b5
